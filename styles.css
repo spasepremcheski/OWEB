@@ -1,0 +1,170 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: ivory;
+}
+
+.tnrfont {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#heading {
+    font-size: xx-large; 
+    text-align: center;
+}
+
+#name {
+    font-size: x-large; 
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+div {
+    position: relative; 
+    margin: auto;
+    width: 1000px;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333; 
+    display: flex;
+    justify-content: space-around;
+}
+  
+#menu ul li {
+    float: left;
+    /*width: 166.6px;*/
+}
+  
+#menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+#menu ul li a:hover {
+    background-color: black;
+}
+
+#info ul li {
+    list-style: square;
+}
+
+#profileimg {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#image fieldset {
+    margin-top: 2em;
+    border-radius: 2%;
+    border-color: lightgray;
+    border-width: 0.2em;
+}
+
+#music h1 {
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+#music ul {
+    width: 1000px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#music ul li {
+    margin: 25px;
+    float: left;
+}
+
+#shows h1 {
+    margin-left: 30px;
+}
+
+#shows ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#shows ul li {
+    float: left;
+    margin: 25px;
+}
+
+#shows ul li a img:hover {
+    position: relative;
+    transform: scale(1.1, 1.1);
+}
+
+#starfield fieldset {
+    text-align: center;
+    margin-top: 2em;
+    border-radius: 2%;
+    border-color: blue;
+    border-width: 0.5em;
+    border-style: dashed;
+}
+
+#footer hr {
+    margin-top: 30px;
+}
+
+#footerleft {
+    float: left;
+}
+
+#footerright {
+    float: right;
+}
+
+#feedback {
+    text-align: center;
+}
+
+#box textarea {
+    width: 1000px;
+    margin-top: 0.5em;
+}
+
+#anketa {
+    font-size: large;
+}
+
+#submit input {
+    color: white;
+    background-color: blue;
+    font-size: large;
+    font-weight: bold;
+    width: 150px;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact ul {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+#contact ul li a{
+    text-decoration: none;
+    font-size: larger;
+    color: blue;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+    color: rgb(0, 162, 255);
+}

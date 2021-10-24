@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Impressions</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div id="heading">
+            <h1>Impressions</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="favourites.html">Favourites</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="impressions.html">Impressions</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="starfield">
+            <fieldset>
+                <h1>
+                    Leave your impressions about my website here
+                </h1>
+            </fieldset>
+        </div>
+
+        <div id="anketa">
+            <p>Please fill the form below</p>
+            <form method="post" action="impressionAccepted.html">
+                <p>
+                    <label>Name: </label>
+                    <input name="name" type="text" size="25" placeholder="Ryan">
+                </p>
+                <p>
+                    <label>Age: </label>
+                    <input name="age" type="number" size="3" placeholder="18">
+                </p>
+                <p>
+                    <label>e-mail: </label>
+                    <input name="email" type="text" size="15" placeholder="ryan.gosling@gmail.com">
+                </p>
+                <p>
+                    <label>Browser: </label>
+                    <input name="browser" type="text" size="25" placeholder="google chrome">
+                </p>
+                <p id="box">
+                    <label>Feedback:</label>
+                    <br>
+                    <textarea name="feedback" rows="5" cols="100" autocapitalize="sentences" placeholder="Type a review here"></textarea>
+                </p>
+                <p>
+                    Rate: 
+                    <label>
+                        <input name="rate" type="radio" value="1">1 star
+                    </label>
+                    <label>
+                        <input name="rate" type="radio" value="2">2 star
+                    </label>
+                    <label>
+                        <input name="rate" type="radio" value="3">3 star
+                    </label>
+                    <label>
+                        <input name="rate" type="radio" value="4">4 star
+                    </label>
+                    <label>
+                        <input name="rate" type="radio" value="5" checked>5 star
+                    </label>
+                </p>
+                <p id="submit">
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+
+        <div id="footer">
+            <hr>
+            <h6 id="footerleft">&copy All Rights Reserved</h6>
+            <h6 id="footerright">Spase Premcheski</h6>
+        </div>
+    </body>
+</html>
