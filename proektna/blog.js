@@ -12,9 +12,9 @@ function post(post){
     content+="<fieldset><img id=\"icon\" src=\"user.png\" alt=\"icon\" width=\"70em\"><h1>Dummy User</h1><p id=\"dateposted\">" + d.toLocaleString();
     content+="</p><p id=\"post\">" + post + "</p>";
     
-    content+="<form id=\"like_comment\" method=\"post\" action=\"blog.html\"><input id=\"like" + post + "\" type=\"submit\" value=\"" + likes + "\" style=\"margin-right: 1%\">";
+    content+="<p id=\"like_comment" + post + "\"><input id=\"like" + post + "\" type=\"submit\" value=\"" + likes + "\" style=\"margin-right: 1%\">";
     content+="<input name=\"comment" + post + "\" id=\"comment" + post + "\" type=\"text\" placeholder=\"Comment\" size=\"60%\">";
-    content+="<input type=\"submit\" value=\"post\">" + "</form></fieldset>";
+    content+="<input type=\"submit\" value=\"post\">" + "</p</fieldset>";
     // content+="<p id=\"likebutton\"><input id=\"like" + img + "\" type=\"button\" value=\"" + likes[img] + "\" style=\"margin-right: 1%\">";
     // content+="<input name=\"comment" + img + "\" id=\"comment" + img + "\" type=\"text\" placeholder=\"Comment\" size=\"60%\">" + "</p>" + "</fieldset>";
     document.getElementById("blog").innerHTML+=content;
