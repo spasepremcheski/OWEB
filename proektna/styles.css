@@ -168,3 +168,39 @@ div {
     text-decoration: underline;
     color: rgb(0, 162, 255);
 }
+
+/* gallery */
+
+#gallery fieldset {
+    text-align: center;
+    margin-top: 2em;
+    border-radius: 2%;
+    border-color: lightgray;
+    border-width: 0.2em;
+}
+
+#gallery fieldset h1{
+    /* text-align: start; */
+    margin-left: 2%;
+    float: left;
+}
+
+#slika{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#dateposted{
+    float: right;
+    margin-right: 15%;
+}
+
+#icon{
+    float: left;
+    margin-left: 15%;
+}
+
+#like_comment{
+    transform: scale(1.3);
+    margin-bottom: 1em;
+}
