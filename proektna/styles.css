@@ -231,10 +231,18 @@ div {
 
 #submit {
     color: white;
-    background-color: blue;
+    background-color: rgb(62, 62, 253);
     font-size: large;
     font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 150px;
+}
+
+#submit:hover {
+    background-color: blue;
 }
 
 
