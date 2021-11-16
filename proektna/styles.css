@@ -1,21 +1,13 @@
+/* every page */
+
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: ivory;
 }
 
-.tnrfont {
-    font-family: 'Times New Roman', Times, serif;
-}
-
 #heading {
     font-size: xx-large; 
     text-align: center;
-}
-
-#name {
-    font-size: x-large; 
-    font-weight: bold;
-    margin-left: 20px;
 }
 
 div {
@@ -51,9 +43,20 @@ div {
     background-color: black;
 }
 
-#info ul li {
-    list-style: square;
+#footer hr {
+    margin-top: 30px;
 }
+
+#footerleft {
+    float: left;
+}
+
+#footerright {
+    float: right;
+}
+
+
+/* home */
 
 #profileimg {
     float: left;
@@ -61,12 +64,39 @@ div {
     margin-right: 20px;
 }
 
+#name {
+    font-size: x-large; 
+    font-weight: bold;
+    margin-left: 20px;
+}
+
 #image fieldset {
     margin-top: 2em;
+    margin-bottom: 1.5em;
     border-radius: 2%;
     border-color: lightgray;
     border-width: 0.2em;
 }
+
+#info input {
+    margin-top: 1em;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#info ul li {
+    list-style: square;
+}
+
+.tnrfont {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* favourites */
 
 #music h1 {
     margin-left: 30px;
@@ -107,67 +137,6 @@ div {
     transform: scale(1.1, 1.1);
 }
 
-#starfield fieldset {
-    text-align: center;
-    margin-top: 2em;
-    border-radius: 2%;
-    border-color: blue;
-    border-width: 0.5em;
-    border-style: dashed;
-}
-
-#footer hr {
-    margin-top: 30px;
-}
-
-#footerleft {
-    float: left;
-}
-
-#footerright {
-    float: right;
-}
-
-#feedback {
-    text-align: center;
-}
-
-#box textarea {
-    width: 1000px;
-    margin-top: 0.5em;
-}
-
-#anketa {
-    font-size: large;
-}
-
-#submit {
-    color: white;
-    background-color: blue;
-    font-size: large;
-    font-weight: bold;
-    width: 150px;
-}
-
-#contact {
-    text-align: center;
-}
-
-#contact ul {
-    list-style-type: none;
-    margin-left: -30px;
-}
-
-#contact ul li a{
-    text-decoration: none;
-    font-size: larger;
-    color: blue;
-}
-
-#contact ul li a:hover {
-    text-decoration: underline;
-    color: rgb(0, 162, 255);
-}
 
 /* gallery */
 
@@ -205,7 +174,9 @@ div {
     margin-bottom: 1em;
 }
 
+
 /* blog */
+
 #blog fieldset {
     text-align: center;
     margin-top: 2em;
@@ -227,18 +198,59 @@ div {
     margin-right: 15%;
     margin-bottom: 5%;
 }
-/* 
-#dateposted{
-    float: right;
-    margin-right: 15%;
+
+
+/* impressions */
+
+#starfield fieldset {
+    text-align: center;
+    margin-top: 2em;
+    border-radius: 2%;
+    border-color: blue;
+    border-width: 0.5em;
+    border-style: dashed;
 }
 
-#icon{
-    float: left;
-    margin-left: 15%;
+#anketa {
+    font-size: large;
 }
 
-#like_comment{
-    transform: scale(1.3);
-    margin-bottom: 1em;
-} */
+#box textarea {
+    width: 1000px;
+    margin-top: 0.5em;
+}
+
+#feedback {
+    text-align: center;
+}
+
+#submit {
+    color: white;
+    background-color: blue;
+    font-size: large;
+    font-weight: bold;
+    width: 150px;
+}
+
+
+/* contact */
+
+#contact {
+    text-align: center;
+}
+
+#contact ul {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+#contact ul li a{
+    text-decoration: none;
+    font-size: larger;
+    color: blue;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+    color: rgb(0, 162, 255);
+}
