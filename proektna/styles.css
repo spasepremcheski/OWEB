@@ -87,6 +87,11 @@ div {
     background: none;
 }
 
+#info input:hover {
+    position: relative;
+    transform: scale(1.1, 1.1);
+}
+
 #info ul li {
     list-style: square;
 }
