@@ -1,5 +1,5 @@
 function start(){
-    var images=["image1.jpeg","image2.jpeg","image3.jpeg","image4.jpeg","image5.jpeg"]
+    var images=["image1.jpeg","image2.jpeg","image3.jpeg","image4.jpeg","image5.jpeg"];
     for(var i in images){
         image(images[i]);
     }
@@ -19,8 +19,8 @@ function image(image){
     // content+="<input name=\"comment" + img + "\" id=\"comment" + img + "\" type=\"text\" placeholder=\"Comment\" size=\"60%\">" + "</p>" + "</fieldset>";
     document.getElementById("gallery").innerHTML+=content;
     
-    // var l=document.getElementById("likeimage1.jpeg");
-    // l.addEventListener("click",asdf(image,likes),false);
+    // var a=document.getElementById("like"+image);
+    // a.addEventListener("click",asdf(image,likes),false);
 }
 
 function asdf(image,likes){
