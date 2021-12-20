@@ -1,3 +1,5 @@
+// podobro so klasa hide i show :)
+
 
 function start(){
     var pi=document.getElementById("personalInfo");

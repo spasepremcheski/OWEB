@@ -6,6 +6,7 @@
         <title>Gallery</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="gallery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -35,8 +36,67 @@
             </ul>
         </div>
 
-        <div id="gallery">
+        <div id="uploadpicture">
+            <fieldset>
+                    <p>
+                        <label>Name:</label>
+                        <input id="name1" name="name" type="text" size="25" placeholder="Ryan">
+                    </p>
+                    <p id="slika">
+                        <label for="myfile">Select a file:</label>
+                        <input type="file" id="myfile" name="myfile" onchange="slika(this)">
+                    </p>
+                    <p>
+                        <input id="submit" type="submit" value="Post" onclick="postpicture()">
+                    </p>
+            </fieldset>
+        </div>
 
+        <div id="gallery">
+            <fieldset>
+                <img id="icon" src="user.png" alt="icon" width="70em">
+                <h1>Dummy User</h1>
+                <p id="dateposted">12/20/2021, 1:42:20 AM</p>
+                <p>
+                    <img id="slika" src="image1.jpeg" alt="image1.jpeg" width="70%" ondblclick="likedimg(this)">
+                </p>
+                
+                <p id="like_comment">
+                    <!-- <p class="heart-shape" id="heart"></p> -->
+                    <input id="like" type="button" style="margin-right: 1%" onclick="liked(this)" value="0">
+                    <input name="comment" type="text" placeholder="Comment" size="60%" onchange="input(this)">
+                    <!-- <input type="submit" value="post"> -->
+                </p>
+            </fieldset>
+            <fieldset>
+                <img id="icon" src="user.png" alt="icon" width="70em">
+                <h1>Dummy User</h1>
+                <p id="dateposted">12/20/2021, 1:42:20 AM</p>
+                <p>
+                    <img id="slika" src="image2.jpeg" alt="image2.jpeg" width="70%" ondblclick="likedimg(this)">
+                </p>
+                
+                <p id="like_comment">
+                    <input id="like" type="button" style="margin-right: 1%" onclick="liked(this)" value="0">
+                    <input name="comment" type="text" placeholder="Comment" size="60%" onchange="input(this)">
+                    <!-- <input type="submit" value="post"> -->
+                </p>
+            </fieldset>
+            <fieldset>
+                <img id="icon" src="user.png" alt="icon" width="70em">
+                <h1>Dummy User</h1>
+                <p id="dateposted">12/20/2021, 1:42:20 AM</p>
+                <p>
+                    <img id="slika" src="image3.jpeg" alt="image3.jpeg" width="70%" ondblclick="likedimg(this)">
+                </p>
+                
+                <p id="like_comment">
+                    <input id="like" type="button" style="margin-right: 1%" onclick="liked(this)" value="0">
+                    <input name="comment" type="text" placeholder="Comment" size="60%" onchange="input(this)">
+                    <!-- <input type="submit" value="post"> -->
+                </p>
+            </fieldset>
+            
         </div>
 
         <div id="footer">

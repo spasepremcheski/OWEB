@@ -5,6 +5,16 @@
         <meta charset="utf-8">
         <title>Favourites</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            function race(){
+                open("race/home.html");
+            }
+
+            function memory(){
+                open("memory/index.html")
+            }
+        </script>
     </head>
 
     <body>
@@ -30,6 +40,18 @@
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="games">
+            <h1>Games</h1>
+            <ul>
+                <li>
+                    <img src="race/turtle_rabbit.jpg" width="200px" alt="Turtle & Rabbit Race" onclick="race()">
+                </li>
+                <li>
+                    <img src="memory/memory.png" width="200px" alt="Memory Game" onclick="memory()">
                 </li>
             </ul>
         </div>
