@@ -78,7 +78,7 @@ function gameLogic(e) {
   // Овде да се напише главната логика на играта
 
   
-  // var slika=e.getElementById().getElementsByTagName("img");
+  // var slika=e.target.getElementById().getElementsByTagName("img");
   var slika=e.target.getElementsByTagName("img")[0];
 
 
