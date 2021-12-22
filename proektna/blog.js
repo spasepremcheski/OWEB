@@ -27,9 +27,18 @@ function liked(like){
     like.value++;
 }
 
+function likeds(smiley){
+    smiley.parentElement.parentElement.querySelectorAll("#like")[0].value++;
+}
+
+// function input(comment){
+//     var user=prompt("Enter name:");
+//     comment.parentElement.innerHTML+="<p id=\"comment\"><img src=\"user.png\" alt=\"icon\" width=\"15em\"> " + user + ": " + comment.value + "</p>";
+// }
+
 function input(comment){
     var user=prompt("Enter name:");
-    comment.parentElement.innerHTML+="<p id=\"comment\"><img src=\"user.png\" alt=\"icon\" width=\"15em\"> " + user + ": " + comment.value + "</p>";
+    comment.parentElement.parentElement.parentElement.parentElement.innerHTML+="<p id=\"comment\"><img src=\"user.png\" alt=\"icon\" width=\"15em\"> " + user + ": " + comment.value + "</p>";
 }
 
 function postStatija(){
@@ -61,9 +70,13 @@ function postStatija(){
     // console.log("da");
 
     var tekst="<fieldset><img id=\"icon\" src=\"user.png\" alt=\"icon\" width=\"70em\"><h1>" + ime + "</h1><p id=\"dateposted\">" + d.toLocaleString() + "</p><h2>" + naslov + "</h2><p id=\"post\">";
-    tekst+=tekst1 + "</p><p id=\"like_comment\">";
-    tekst+="<input id=\"like\" type=\"button\" style=\"margin-right: 1%\" onclick=\"liked(this)\" value=\"0\">";
-    tekst+="<input name=\"comment\" type=\"text\" placeholder=\"Comment\" size=\"60%\" onchange=\"input(this)\"></p></fieldset>";
+    tekst+=tekst1 + "</p><div id=\"like_comment\"><ul id=\"lc\"><li>";
+    tekst+="<input id=\"smiley\" type=\"button\" onclick=\"likeds(this)\" value=\"&#128525;\"></li><li><input id=\"like\" type=\"button\" onclick=\"liked(this)\" value=\"0\">";
+    tekst+="</li><li><input name=\"comment\" type=\"text\" placeholder=\"Comment\" size=\"60%\" onchange=\"input(this)\"></li></ul></div></fieldset>";
+    
+    // "<p id=\"like_comment\">";
+    // tekst+="<input id=\"like\" type=\"button\" style=\"margin-right: 1%\" onclick=\"liked(this)\" value=\"0\">";
+    // tekst+="<input name=\"comment\" type=\"text\" placeholder=\"Comment\" size=\"60%\" onchange=\"input(this)\"></p></fieldset>";
 
     var gall=document.getElementById("blog").innerHTML;
     document.getElementById("blog").innerHTML=tekst + gall;

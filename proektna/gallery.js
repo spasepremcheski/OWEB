@@ -75,14 +75,18 @@ function liked(like){
     like.value++;
 }
 
+function likeds(smiley){
+    smiley.parentElement.parentElement.querySelectorAll("#like")[0].value++;
+}
+
 function likedimg(img){
     var like=img.parentElement.parentElement;
-    like=like.querySelectorAll("#like_comment")[0].querySelectorAll("#like")[0].value++;
+    like.querySelectorAll("#like_comment")[0].querySelectorAll("#lc")[0].querySelectorAll("#like")[0].value++;
 }
 
 function input(comment){
     var user=prompt("Enter name:");
-    comment.parentElement.innerHTML+="<p id=\"comment\"><img src=\"user.png\" alt=\"icon\" width=\"15em\"> " + user + ": " + comment.value + "</p>";
+    comment.parentElement.parentElement.parentElement.parentElement.innerHTML+="<p id=\"comment\"><img src=\"user.png\" alt=\"icon\" width=\"15em\"> " + user + ": " + comment.value + "</p>";
 }
 
 function slika(img){
@@ -106,9 +110,9 @@ function postpicture(){
     // console.log("da");
 
     var tekst="<fieldset><img id=\"icon\" src=\"user.png\" alt=\"icon\" width=\"70em\"><h1>" + ime + "</h1><p id=\"dateposted\">" + d.toLocaleString() + "</p><p>";
-    tekst+="<img id=\"slika\" src=" + link + " alt=" + link + " width=\"70%\" ondblclick=\"likedimg(this)\"></p><p id=\"like_comment\">";
-    tekst+="<input id=\"like\" type=\"button\" style=\"margin-right: 1%\" onclick=\"liked(this)\" value=\"0\">";
-    tekst+="<input name=\"comment\" type=\"text\" placeholder=\"Comment\" size=\"60%\" onchange=\"input(this)\"></p></fieldset>";
+    tekst+="<img id=\"slika\" src=" + link + " alt=" + link + " width=\"70%\" ondblclick=\"likedimg(this)\"></p><div id=\"like_comment\"><ul id=\"lc\"><li>";
+    tekst+="<input id=\"smiley\" type=\"button\" onclick=\"likeds(this)\" value=\"&#128525;\"></li><li><input id=\"like\" type=\"button\" onclick=\"liked(this)\" value=\"0\">";
+    tekst+="</li><li><input name=\"comment\" type=\"text\" placeholder=\"Comment\" size=\"60%\" onchange=\"input(this)\"></li></ul></div></fieldset>";
 
     var gall=document.getElementById("gallery").innerHTML;
     document.getElementById("gallery").innerHTML=tekst + gall;
